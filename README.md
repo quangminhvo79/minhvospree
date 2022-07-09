@@ -139,6 +139,6 @@ Spree Starter is maintained and funded by [Spark Solutions Sp. z o.o.](http://sp
 The names and logos are trademarks of Spark Solutions Sp. z o.o.
 
 We are passionate about open source software.
-We are [available for hire][spark].
+We are [available for hire][spark]
 
 [spark]:http://sparksolutions.co?utm_source=github

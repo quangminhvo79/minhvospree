@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   # Spree routes
+  root "spree/products#index"
   mount Spree::Core::Engine, at: '/'
 
   # sidekiq web UI

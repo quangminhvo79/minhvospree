@@ -1,0 +1,25 @@
+!!!
+/[if lt IE 7 ] <html class="ie ie6" lang="<haml_loud> I18n.locale </haml_loud>">
+/[if IE 7 ] <html class="ie ie7" lang="<haml_loud> I18n.locale </haml_loud>">
+/[if IE 8 ] <html class="ie ie8" lang="<haml_loud> I18n.locale </haml_loud>">
+/[if IE 9 ] <html class="ie ie9" lang="<haml_loud> I18n.locale </haml_loud>">
+/[if gt IE 9]><!
+%html{ class: "h-full bg-white", lang: I18n.locale}
+  / <![endif]
+  %head{ "data-hook" => "inside_head" }
+    = render partial: 'spree/shared/head'
+    = render partial: 'spree/shared/custom_head'
+  %body{ class: custom_body_class, "data-hook" => "body", id: controller_name || 'default' }
+    = render partial: 'spree/shared/header'
+
+    .flash-message
+      = flash_messages
+
+    #overlay.overlay.hide-on-esc
+
+    .spree-container
+      = yield
+      = yield :templates
+
+    = render partial: 'spree/shared/footer'
+    = render 'spree/shared/translations'

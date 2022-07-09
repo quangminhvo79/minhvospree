@@ -29,6 +29,8 @@ services:
       DB_HOST: postgres
       DB_PORT: 5432
       DISABLE_SPRING: 1
+    stdin_open: true
+    tty: true
   worker:
     depends_on:
       - 'postgres'

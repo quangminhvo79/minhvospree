@@ -40,6 +40,7 @@ module SpreeStarter
 
     # adds support for Services
     config.autoload_paths += %W(#{config.root}/services #{config.root}/app/services/concerns)
+    config.assets.initialize_on_precompile = false
 
     if Rails.env.production?
       # CloudFlare middleware for proper visitors IP addresses

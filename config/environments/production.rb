@@ -24,10 +24,10 @@ Rails.application.configure do
   config.public_file_server.headers = { 'Cache-Control' => 'public, max-age=31536000' }
 
   # Compress CSS using a preprocessor.
-  # config.assets.css_compressor = :sass
+  config.assets.css_compressor = nil
 
   # Minimize JS code
-  config.assets.js_compressor = :terser
+  # config.assets.js_compressor = Uglifier.new(:harmony => true)
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false

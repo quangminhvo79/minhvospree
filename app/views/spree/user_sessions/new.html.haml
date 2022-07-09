@@ -1,0 +1,23 @@
+.min-h-full.flex
+  .flex-1.flex.flex-col.justify-center.py-12.px-4.sm:px-6.lg:flex-none.lg:px-20.xl:px-24
+    .mx-auto.w-full.max-w-sm.lg:w-96
+      %div
+        %img.h-12.w-auto{ alt: "Workflow", src: "https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg" }
+        %h2.mt-6.text-3xl.font-extrabold.text-gray-900 Sign in to your account
+        %p.mt-2.text-sm.text-gray-600
+          Or
+          %a.font-medium.text-indigo-600{ href: "#", class: 'hover:text-indigo-500' }
+            start your 14-day
+            free trial
+      .mt-8
+        %div
+          = render 'spree/shared/social_login'
+          .mt-6.relative
+            .absolute.inset-0.flex.items-center{"aria-hidden" => "true"}
+              .w-full.border-t.border-gray-300
+            .relative.flex.justify-center.text-sm
+              %span.px-2.bg-white.text-gray-500 Or continue with
+        .mt-6
+          = render 'form'
+  .hidden.lg:block.relative.w-0.flex-1
+    %img.absolute.inset-0.h-full.w-full.object-cover{:alt => "", :src => "https://images.unsplash.com/photo-1505904267569-f02eaeb45a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1908&q=80"}/

@@ -9,12 +9,11 @@ gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
-# gem 'uglifier'
+gem 'uglifier'
 gem 'terser'
 
 gem 'bootsnap', require: false
 
-gem 'tailwindcss-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -77,6 +76,7 @@ gem 'spree_sample', spree_opts
 gem 'spree_emails', spree_opts
 gem 'spree_backend', spree_opts
 gem 'spree_gateway'
+gem 'spree_frontend'
 gem 'spree_auth_devise'
 gem 'spree_i18n', '>= 5.0'
 gem 'spree_dev_tools', require: false, group: %w[test development]
@@ -103,3 +103,7 @@ gem 'oj'
 
 # Fix SCSS errors with Ruby 3 on MacOS
 gem 'sassc', github: 'sass/sassc-ruby', group: :development
+
+gem "tailwindcss-rails", "~> 2.0"
+gem "haml-rails", "~> 2.0"
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
