@@ -1,5 +1,7 @@
 class InitDummyData < ActiveRecord::Migration[6.1]
   def change
+    Spree::Seeds::All.call
+
     products.each do |image_url|
       product = Spree::Product.new({
         description: Faker::Food.description,
