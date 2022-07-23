@@ -107,3 +107,7 @@ gem 'sassc', github: 'sass/sassc-ruby', group: :development
 gem "tailwindcss-rails", "~> 2.0"
 gem "haml-rails", "~> 2.0"
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+
+# View Component & Storybook
+gem "view_component"
+gem "view_component_storybook"

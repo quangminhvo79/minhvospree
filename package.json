@@ -4,6 +4,12 @@
     "esbuild": "^0.14.1"
   },
   "scripts": {
-    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds"
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds",
+    "storybook": "start-storybook",
+    "storybook:build": "rake view_component_storybook:write_stories_json && build-storybook -o public/storybook"
+  },
+  "devDependencies": {
+    "@storybook/addon-controls": "^6.5.9",
+    "@storybook/server": "^6.5.9"
   }
 }

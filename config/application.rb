@@ -6,6 +6,9 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+require 'view_component'
+require 'view_component/storybook'
+
 module SpreeStarter
   class Application < Rails::Application
     config.to_prepare do

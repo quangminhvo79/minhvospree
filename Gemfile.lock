@@ -688,6 +688,11 @@ GEM
     validates_zipcode (0.5.0)
       activemodel (>= 4.2.0)
     vcr (6.0.0)
+    view_component (2.61.1)
+      activesupport (>= 5.0.0, < 8.0)
+      method_source (~> 1.0)
+    view_component_storybook (0.11.1)
+      view_component (>= 2.36)
     warden (1.2.9)
       rack (>= 2.0.9)
     web-console (4.2.0)
@@ -759,6 +764,8 @@ DEPENDENCIES
   terser
   uglifier
   vcr
+  view_component
+  view_component_storybook
   web-console (~> 4.0)
   webmock
 
